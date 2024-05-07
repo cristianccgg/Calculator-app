@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* ### Theme 1 */
+
+  /* #### Backgrounds */
+
+  --Very-dark-desaturated-blue-main-background: hsl(222, 26%, 31%);
+  --Very-dark-desaturated-blue-toggle-background-keypad-background: hsl(
+    223,
+    31%,
+    20%
+  );
+  --Very-dark-desaturated-blue-screen-background: hsl(224, 36%, 15%);
+
+  /* #### Keys */
+
+  --Desaturated-dark-blue-key-background: hsl(225, 21%, 49%);
+  --Desaturated-dark-blue-key-shadow: hsl(224, 28%, 35%);
+
+  --Red-key-background-toggle: hsl(6, 63%, 50%);
+  --Dark-red-key-shadow: hsl(6, 70%, 34%);
+
+  --Light-grayish-orange-key-background: hsl(30, 25%, 89%);
+  --Grayish-orange-key-shadow: hsl(28, 16%, 65%);
+}
+
+main {
+  background-color: var(--Very-dark-desaturated-blue-main-background);
+  height: 100vh;
+}
+
+.main-container {
+  width: 40vw;
+  height: 60vh;
+}
+
+.title-and-theme {
+  color: white;
+}
+
+.title,
+.theme-text {
+  font-size: 1rem;
+}
+
+input {
+  color: white;
+  font-size: 2rem;
+  height: 5rem;
+  background-color: var(--Very-dark-desaturated-blue-screen-background);
+}
+
+.btns-container {
+  background-color: var(--Very-dark-desaturated-blue-screen-background);
+}
+
+.btn {
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: var(--Light-grayish-orange-key-background);
+}
+
+.btn:hover {
+  background-color: var(--Desaturated-dark-blue-key-shadow);
+}
+
+.button-delete,
+.button-reset {
+  background-color: var(--Desaturated-dark-blue-key-background);
+}
+
+.button-result {
+  background-color: orange;
+}
