@@ -44,40 +44,40 @@
           <h1 class="col title">calc</h1>
           <h2 class="col theme-text">theme</h2>
         </div>
-        <div class="input-div"><input class="w-100 text-end p-4" /></div>
+        <div class="input-div">
+          <input type="text" id="input-result" class="w-100 text-end p-4" />
+        </div>
         <div
           id="btns"
           class="btns-container container d-flex flex-column py-3 px-4 gap-3"
         >
           <div class="first-row row column-gap-3">
-            <button class="col btn" type="number" data-="7">7</button>
-            <button class="col btn" type="number" data-="8">8</button>
-            <button class="col btn" type="number" data-="9">9</button>
-            <button class="col btn button-delete" type="number">DEL</button>
+            <button class="col btn" type="number" data-number="7">7</button>
+            <button class="col btn" type="number" data-number="8">8</button>
+            <button class="col btn" type="number" data-number="9">9</button>
+            <button class="col btn button-delete">DEL</button>
           </div>
           <div class="second-row row column-gap-3">
-            <button class="col btn" type="number" data-="4">4</button>
-            <button class="col btn" type="number" data-="5">5</button>
-            <button class="col btn" type="number" data-="6">6</button>
-            <button class="col btn button-plus" type="number">+</button>
+            <button class="col btn" type="number" data-number="4">4</button>
+            <button class="col btn" type="number" data-number="5">5</button>
+            <button class="col btn" type="number" data-number="6">6</button>
+            <button class="col btn button-plus" data-sign="+">+</button>
           </div>
           <div class="third-row row column-gap-3">
-            <button class="col btn" type="number" data-="1">1</button>
-            <button class="col btn" type="number" data-="2">2</button>
-            <button class="col btn" type="number" data-="3">3</button>
-            <button class="col btn button-minus" type="number">-</button>
+            <button class="col btn" type="number" data-number="1">1</button>
+            <button class="col btn" type="number" data-number="2">2</button>
+            <button class="col btn" type="number" data-number="3">3</button>
+            <button class="col btn button-minus" data-sign="-">-</button>
           </div>
           <div class="fourth-row row column-gap-3">
-            <button class="col btn button-dot" type="number" data-=".">
-              .
-            </button>
-            <button class="col btn" type="number" data-="0">0</button>
-            <button class="col btn" type="number" data-="/">/</button>
-            <button class="col btn" type="number">x</button>
+            <button class="col btn button-dot" data-sign=".">.</button>
+            <button class="col btn" type="number" data-number="0">0</button>
+            <button class="col btn" type="number" data-sign="/">/</button>
+            <button class="col btn" type="number" data-sign="*">x</button>
           </div>
           <div class="fifth-row row column-gap-3">
-            <button class="col btn button-reset" type="reset">RESET</button>
-            <button class="col btn button-result" type="button">=</button>
+            <button class="col btn button-reset">RESET</button>
+            <button class="col btn button-result" data-sign="=">=</button>
           </div>
         </div>
       </div>
