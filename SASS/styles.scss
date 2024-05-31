@@ -120,7 +120,6 @@
 
   .btns {
     background-color: var(--Very-dark-desaturated-blue-screen-background);
-    height: 300px !important;
   }
 
   .del-btn,
@@ -140,6 +139,7 @@
     color: white;
     width: 100% !important;
     font-size: 16px !important;
+    height: 50px !important;
   }
 
   .equal-btn:hover {
@@ -148,11 +148,12 @@
 
   .reset-btn {
     width: 100% !important;
+    height: 50px !important;
   }
 
   .btn {
     background-color: white;
-    width: 60px;
+    width: 100%;
     height: 40px;
     font-size: 18px;
     text-align: center;
@@ -182,7 +183,6 @@
   .calc {
     font-weight: 800;
     font-size: 20px;
-
     color: var(--very-dark-grayish-yellow);
   }
 
@@ -232,15 +232,17 @@
     color: white !important;
     width: 100% !important;
     font-size: 16px !important;
+    height: 50px !important;
   }
 
   .reset-btn {
     width: 100% !important;
+    height: 50px !important;
   }
 
   .btn {
     background-color: white;
-    width: 60px;
+    width: 90px;
     height: 40px;
     font-size: 18px;
     text-align: center;
@@ -321,15 +323,17 @@
     color: var(--T3-Very-dark-violet-mainbackground) !important;
     width: 100% !important;
     font-size: 16px !important;
+    height: 50px !important;
   }
 
   .reset-btn {
     width: 100% !important;
+    height: 50px !important;
   }
 
   .btn {
     background-color: var(--T3-Very-dark-violet-key-background);
-    width: 60px;
+    width: 90px;
     height: 40px;
     font-size: 18px;
     text-align: center;
@@ -348,4 +352,14 @@
     font-weight: 600;
     border: none;
   }
+}
+
+.attribution {
+  font-size: 10px;
+  color: var(--Desaturated-dark-blue-key-background);
+}
+
+a {
+  font-size: 10px;
+  color: white;
 }

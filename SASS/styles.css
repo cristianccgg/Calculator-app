@@ -81,7 +81,6 @@
 }
 .theme-1 .btns {
   background-color: var(--Very-dark-desaturated-blue-screen-background);
-  height: 300px !important;
 }
 .theme-1 .del-btn,
 .theme-1 .reset-btn {
@@ -98,16 +97,18 @@
   color: white;
   width: 100% !important;
   font-size: 16px !important;
+  height: 50px !important;
 }
 .theme-1 .equal-btn:hover {
   background-color: hsl(6, 67%, 65%) !important;
 }
 .theme-1 .reset-btn {
   width: 100% !important;
+  height: 50px !important;
 }
 .theme-1 .btn {
   background-color: white;
-  width: 60px;
+  width: 100%;
   height: 40px;
   font-size: 18px;
   text-align: center;
@@ -171,13 +172,15 @@
   color: white !important;
   width: 100% !important;
   font-size: 16px !important;
+  height: 50px !important;
 }
 .theme-2 .reset-btn {
   width: 100% !important;
+  height: 50px !important;
 }
 .theme-2 .btn {
   background-color: white;
-  width: 60px;
+  width: 90px;
   height: 40px;
   font-size: 18px;
   text-align: center;
@@ -242,13 +245,15 @@
   color: var(--T3-Very-dark-violet-mainbackground) !important;
   width: 100% !important;
   font-size: 16px !important;
+  height: 50px !important;
 }
 .theme-3 .reset-btn {
   width: 100% !important;
+  height: 50px !important;
 }
 .theme-3 .btn {
   background-color: var(--T3-Very-dark-violet-key-background);
-  width: 60px;
+  width: 90px;
   height: 40px;
   font-size: 18px;
   text-align: center;
@@ -263,4 +268,14 @@
   font-size: 2rem !important;
   font-weight: 600;
   border: none;
+}
+
+.attribution {
+  font-size: 10px;
+  color: var(--Desaturated-dark-blue-key-background);
+}
+
+a {
+  font-size: 10px;
+  color: white;
 }/*# sourceMappingURL=styles.css.map */
