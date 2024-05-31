@@ -1,21 +1,36 @@
-const numBtns = document.querySelectorAll(".btn");
-const inputResult = document.getElementById("input-result");
-let numInBtn;
-let signInBtn;
+const display = document.querySelector("#display");
+const buttons = document.querySelectorAll("button");
+const themeBtns = document.querySelectorAll(".theme-btn");
+const bodyTheme = document.getElementById("body");
 
-numBtns.forEach((element) => {
-  element.addEventListener("click", (event) => {
-    numInBtn = event.target.dataset.number;
-    signInBtn = event.target.dataset.sign;
+themeBtns.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    if (index === 0) {
+      bodyTheme.classList.add("theme-1");
+      bodyTheme.classList.remove("theme-2");
+      bodyTheme.classList.remove("theme-3");
+    } else if (index === 1) {
+      bodyTheme.classList.add("theme-2");
+      bodyTheme.classList.remove("theme-1");
+      bodyTheme.classList.remove("theme-3");
+    } else if (index === 2) {
+      bodyTheme.classList.add("theme-3");
+      bodyTheme.classList.remove("theme-1");
+      bodyTheme.classList.remove("theme-2");
+    }
   });
 });
 
-const calc = (numInBtn, signInBtn) => {
-  if (numInBtn && signInBtn) {
-    let result = parseInt(numInBtn) + parseInt(signInBtn) + parseInt(numInBtn);
-    return result;
-  } else {
-    console.log("No hay suficientes datos para calcular.");
-    return NaN;
-  }
-};
+buttons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    if (btn.id === "=") {
+      display.value = eval(display.value);
+    } else if (btn.id === "reset") {
+      display.value = "";
+    } else if (btn.id === "del") {
+      display.value = display.value.slice(0, -1);
+    } else {
+      display.value += btn.id;
+    }
+  });
+});
